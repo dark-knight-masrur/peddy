@@ -1,0 +1,26 @@
+body {
+    font-family: 'lato';
+}
+
+.text-1 {
+    color: #131313;
+}
+
+.text-2 {
+    color: rgba(19, 19, 19, 0.70);
+}
+
+.text-3 {
+
+    color: #0E7A81;
+}
+
+.bg-1 {
+
+    background-color: #0E7A81;
+}
+
+.bg-2 {
+
+    background-color: #131313;
+}
