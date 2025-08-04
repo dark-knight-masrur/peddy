@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <!-- this is heading part  -->
+    <!--  this is heading part  -->
     <header class="container mx-auto">
 
         <!-- nav start  -->
@@ -89,122 +89,119 @@
     <main>
 
         <!-- this part is for hero part  -->
-        <section class="container mx-auto">
-            <div class="grid grid-flow-row items-center justify-center mt-44">
-                <!-- text part  -->
-                <div class=" ">
-                    <div class="hero-content text-center mb-12">
-                        <div class="max-w-lg pb-7">
-                            <p class="text-2 pb-4">Bringing Families Together ❤️‍🔥
-                            </p>
-                            <h1 class="text-5xl font-bold text-1">Your Path to Adoption Starts Here </h1>
-                            <p class="py-6">
-                                It is a long established fact that a reader will be distracted by the readable content
-                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.
-                            </p>
-                            <button class="btn bg-1 text-white">view More</button>
-                        </div>
+        <!-- <!-- <section class="container mx-auto"> -->
+        <div class="grid grid-flow-row items-center justify-center mt-44">
+            <!-- text part  -->
+            <div class=" ">
+                <div class="hero-content text-center mb-12">
+                    <div class="max-w-lg pb-7">
+                        <p class="text-2 pb-4">Bringing Families Together ❤️‍🔥
+                        </p>
+                        <h1 class="text-5xl font-bold text-1">Your Path to Adoption Starts Here </h1>
+                        <p class="py-6">
+                            It is a long established fact that a reader will be distracted by the readable content
+                            of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.
+                        </p>
+                        <button onclick="document.getElementById('forScroll').scrollIntoView({ behavior: 'smooth' });"
+                            class="btn bg-1 text-white">view
+                            More</button>
                     </div>
-
                 </div>
 
-                <div class="mx-auto"> <img src="./asset/images/pet.webp" alt=""></div>
             </div>
+
+            <div class="mx-auto"> <img src="./asset/images/pet.webp" alt=""></div>
+        </div>
 
         </section>
     </main>
 
     <!-- this animal catergory part  -->
-    <section class="container mx-auto my-40">
-        <div class="text-center ">
-            <h1 class="text-4xl font-extrabold">Adopt Your Best Friend</h1>
-            <p class="py-7 text-2 text-base">It is a long established fact that a reader will be distracted by the
-                readable
-                content of a
-                <br> page
-                when looking at its layout. The point of using Lorem Ipsum is that it has a.
-            </p>
-            <div class="grid grid-flow-col gird-col-2 md:gid-col-4 gap-7 justify-around mt-10 category-btn">
-                <button
-                    class="btn border hover:border-2 hover:border-[#0E7A81] hover:bg-[rgba(14,122,129,0.10)]  rounded-2xl hover:rounded-full border-slate-400  px-16  h-20 text-lg"><img
-                        class="w-10" src="./asset/images/dog.png" alt="" ">Dogs
-                    </button>
+    <section id="forScroll" class="container mx-auto my-40 max-sm:px-5">
+        <div id="btn-container" class="text-center ">
+            <!-- contex text of button section  -->
+            <div id="category">
+                <h1 class="text-4xl font-extrabold">Adopt Your Best Friend</h1>
+                <p class="py-7 text-2 text-base">It is a long established fact that a reader will be distracted by the
+                    readable
+                    content of a
+                    <br> page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a.
+                </p>
 
+                <!-- this part for button  -->
+                <div id="btn-container-item"
+                    class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7 justify-between mt-10 ">
+                </div>
+            </div>
 
-                    
-                <button  class=" btn border hover:border-2 hover:border-[#0E7A81] hover:bg-[rgba(14,122,129,0.10)]
-                        rounded-2xl hover:rounded-full border-slate-400 px-16 h-20 text-lg"><img class="w-10"
-                        src=" ./asset/images/cat.png" alt="" ">Cats
-                    </button>
-                <button  class=" btn border hover:border-2 hover:border-[#0E7A81] hover:bg-[rgba(14,122,129,0.10)]
-                        rounded-2xl hover:rounded-full border-slate-400 px-16 h-20 text-lg"><img class="w-10"
-                        src=" ./asset/images/rabbit.png" alt="" ">Rabits
-                    </button>
-                <button  class=" btn border hover:border-2 hover:border-[#0E7A81] hover:bg-[rgba(14,122,129,0.10)]
-                        rounded-2xl hover:rounded-full border-slate-400 px-16 h-20 text-lg"><img class="w-10"
-                        src=" ./asset/images/bird.png" alt="" ">Birds
-                    </button>
+            <!-- this part is for showing animal -->
+            <div id="allAnimal" class="">
+
             </div>
         </div>
+
+
     </section>
 
+
     <!-- this is footer part  -->
-    <footer class=" bg-2 ">
-        <div class=" py-32 container ml-5 md:mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 text-white justify-center">
+    <footer class=" bg-2 px-7">
+        <div class=" py-32 container mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 text-white justify-center">
 
-                    <!-- coloumn -1 -->
-                    <div class="cl-1">
-                        <a href="#">
-                            <div class="flex gap-2 font-extrabold text-3xl"><img src="./asset/images/logo.webp" alt=""
-                                    srcset="">
+            <!-- coloumn -1 -->
+            <div class="cl-1">
+                <a href="#">
+                    <div class="flex gap-2 font-extrabold text-3xl">
+                        <img src="./asset/images/logo.webp" alt="" srcset="">
 
-                                <h3 class="">Peddy</h3>
-
-                            </div>
-                        </a>
-                        <div class="p-1 mt-8 text-lg  footer-i-1">
-                            <p>Location: av. Washington 165, NY CA 54003</p>
-                            <p>Phone: +31 85 964 47 25</p>
-                            <p>Email: info@yourdomain.com</p>
-                            <p>Openings hours: 9.00 AM - 5.00 PM</p>
-                        </div>
-                        <div class="flex gap-10 mt-8">
-                            <a href=""><img src="./asset/images/fb.png" alt=""></a>
-                            <a href=""><img src="./asset/images/x.png" alt=""></a>
-                            <a href=""><img src="./asset/images/instagram.png" alt=""></a>
-                            <a href=""><img src="./asset/images/youtube.png" alt=""></a>
-                        </div>
+                        <h3 class="">Peddy</h3>
 
                     </div>
-
-                    <!-- column-2  -->
-                    <div class="cl-2 md:ml-16 mx-sm:text-center">
-                        <ul>
-                            <li class="mt-6"><a href="">Home</a></li>
-                            <li class="mt-6"><a href="">About us</a></li>
-                            <li class="mt-6"><a href="">Animals</a></li>
-                            <li class="mt-6"><a href="">Foundation</a></li>
-                            <li class="mt-6"><a href="">Contacts</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- column-3  -->
-                    <div class="cl-3">
-                        <p class="text-2xl mb-8">Drop a message</p>
-                        <div class="grid gap-4">
-                            <input type="Email" placeholder="Enter your Email here"
-                                class="input input-bordered input-info w-10/12 md:w-2/4 p-8 max-w-xs" />
-
-                            <button
-                                class="btn md:w-6/12   items-center text-xl bg-1  w-10/12  text-white border-none ">Subscribe
-                            </button>
-
-                        </div>
-                    </div>
+                </a>
+                <div class="p-1 mt-8 text-lg  footer-i-1">
+                    <p>Location: av. Washington 165, NY CA 54003</p>
+                    <p>Phone: +31 85 964 47 25</p>
+                    <p>Email: info@yourdomain.com</p>
+                    <p>Openings hours: 9.00 AM - 5.00 PM</p>
+                </div>
+                <div class="flex gap-10 mt-8">
+                    <a href=""><img src="./asset/images/fb.png" alt=""></a>
+                    <a href=""><img src="./asset/images/x.png" alt=""></a>
+                    <a href=""><img src="./asset/images/instagram.png" alt=""></a>
+                    <a href=""><img src="./asset/images/youtube.png" alt=""></a>
+                </div>
 
             </div>
-            </footer>
 
+            <!-- column-2  -->
+            <div class="cl-2 md:ml-16 mx-sm:text-center">
+                <ul>
+                    <li class="mt-6"><a href="">Home</a></li>
+                    <li class="mt-6"><a href="">About us</a></li>
+                    <li class="mt-6"><a href="">Animals</a></li>
+                    <li class="mt-6"><a href="">Foundation</a></li>
+                    <li class="mt-6"><a href="">Contacts</a></li>
+                </ul>
+            </div>
+
+            <!-- column-3  -->
+            <div class="cl-3">
+                <p class="text-2xl mb-8">Drop a message</p>
+                <div class="grid gap-4">
+                    <input type="Email" placeholder="Enter your Email here"
+                        class="input input-bordered input-info w-10/12 lg:w-7/12 p-8 " />
+
+                    <button class="btn lg:w-7/12 items-center text-xl bg-1  w-10/12  text-white border-none ">Subscribe
+                    </button>
+
+                </div>
+            </div>
+    </footer>
+
+
+    <script src="./script/loadAnimal.js"></script>
+    <script src="./script/category.js"></script>
 </body>
 
 </html>
