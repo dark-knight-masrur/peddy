@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
             allAnimalContainer.innerHTML = `
         <div class="no-pets-message rounded-md">
         <img src="/asset/images/IMG20250805164747 copy (1).jpg"/>
-        <h2 class="text-3xl font-bold">The one and Bird is my jaan pakhi</h2>
+        <h2 class="text-3xl font-bold">The one and only Bird is my jaan pakhi</h2>
             <p class="max-sm:text-justify">My Dear Sutana madam,<br> Thanks for making this bad man to a gentleman and this gentleman is promising to you that he will be always with you everywhere and every situation like fort who protect his queen. <br> 
             You are my pakhi,
             You are my jaan,
