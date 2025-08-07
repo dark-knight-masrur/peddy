@@ -136,9 +136,19 @@
             </div>
 
             <!-- this part is for showing animal -->
-            <div id="allAnimal" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7 my-10 ">
+            <!-- <div class="lg:grid lg:grid-cols-3 gap-7"> -->
+
+            <div id="allAnimal" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7 my-10 col-span-2">
+
 
             </div>
+            <!-- <div id="likedAnimal" class="grid grid-cols-2  gap-4 my-10">
+                    <img src="./asset/images/error.webp" alt="">
+                    <img src="./asset/images/error.webp" alt="">
+                    <img src="./asset/images/error.webp" alt="">
+                </div>
+            </div> -->
+
         </div>
 
 
@@ -159,7 +169,7 @@
 
                     </div>
                 </a>
-                <div class="p-1 mt-8 text-lg  footer-i-1">
+                <div class="p-1 mt-8 text-lg  footer-i-1 ">
                     <p>Location: av. Washington 165, NY CA 54003</p>
                     <p>Phone: +31 85 964 47 25</p>
                     <p>Email: info@yourdomain.com</p>
@@ -199,7 +209,97 @@
             </div>
     </footer>
 
+
+    <!-- Place this right before </body> in index.html -->
+    <dialog id="adoptionModal" class="modal">
+        <div class="modal-box text-center">
+            <h3 class="font-bold text-2xl mb-4">Adoption in Progress!</h3>
+            <div id="countdown" class="text-5xl font-bold my-8">3</div>
+            <p>Please wait while we process your adoption request...</p>
+        </div>
+    </dialog>
+
+    <script>
+        function startAdoption(button) {
+            const modal = document.getElementById('adoptionModal');
+            const countdownElement = document.getElementById('countdown');
+
+            if (!modal || !countdownElement) {
+                console.error("Modal elements not found");
+                return;
+            }
+
+            // Disable button during process
+            button.disabled = true;
+
+            // Show modal
+            modal.showModal();
+
+            // Start countdown
+            let count = 3;
+            countdownElement.textContent = count;
+
+            const countdownInterval = setInterval(() => {
+                count--;
+                countdownElement.textContent = count;
+
+                if (count <= 0) {
+                    clearInterval(countdownInterval);
+
+                    // Close modal after slight delay
+                    setTimeout(() => {
+                        modal.close();
+
+                        // Update button
+                        button.innerHTML = `
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+          Adopted
+        `;
+
+                        // Change button style
+                        button.classList.remove('bg-button', 'hover:bg-[#0E7A81]');
+                        button.classList.add('bg-green-100', 'text-green-800', 'cursor-default');
+                    }, 1000);
+                }
+            }, 1000);
+        }
+    </script>
+    <script>
+        function toggleLike(button) {
+            const icon = button.querySelector('.like-icon');
+            const text = button.querySelector('.like-text');
+
+            // Toggle the active state
+            button.classList.toggle('active');
+
+            // Check if active
+            if (button.classList.contains('active')) {
+                // Change to filled heart
+                icon.setAttribute('fill', 'currentColor');
+                icon.setAttribute('stroke', 'none');
+                text.textContent = 'Liked';
+
+                // Optional: Change button color
+                button.classList.add('bg-[#0E7A81]', 'text-white');
+            } else {
+                // Change back to outline heart
+                icon.setAttribute('fill', 'none');
+                icon.setAttribute('stroke', 'currentColor');
+                text.textContent = 'Like';
+
+                // Optional: Revert button color
+                button.classList.remove('bg-[#0E7A81]', 'text-white');
+            }
+
+            // Here you can add your addLikedToDive() functionality
+            // const petId = button.dataset.petId; // If you have pet IDs
+            // addLikedToDive(petId, button.classList.contains('active'));
+        }
+    </script>
     <script src="./script/pets.js"></script>
+
 
     <!-- <script src="./script/loadAnimal.js"></script>
     <script src="./script/category.js"></script> -->

@@ -24,3 +24,47 @@ body {
 
     background-color: #131313;
 }
+
+.no-pets-message {
+    background-color: rgb(254, 250, 244);
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    /* or 100vh to center vertically in whole page */
+    grid-column: 1 / -1;
+    /* spans all grid columns if inside a grid */
+}
+
+.no-pets-message p {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #555;
+    padding: 2rem;
+}
+
+/* this section for loading the spin  */
+
+.spin-loader {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    /* or 100vh to center vertically in whole page */
+    grid-column: 1 / -1;
+    /* spans all grid columns if inside a grid */
+
+}
+
+.spin-loader span {
+    transition-duration: 30000ms;
+    width: 60px;
+}
+
+.bg-button {
+    background-color: rgba(14, 122, 129, 0.1);
+}
