@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!pets || pets.length === 0) {
             allAnimalContainer.innerHTML = `
         <div class="no-pets-message rounded-md">
-        <img src="IMG20250805164747 copy (1).jpg"/>
+        <img src="asset/images/IMG20250805164747 copy (1).jpg"/>
         <h2 class="text-3xl font-bold">The one and only Bird is my jaan pakhi</h2>
             <p class="max-sm:text-justify">My Dear Sutana madam,<br> Thanks for making this bad man to a gentleman and this gentleman is promising to you that he will be always with you everywhere and every situation like fort who protect his queen. <br> 
             You are my pakhi,
@@ -53,35 +53,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     ${pet.breed ? `
                     <p class="flex gap-2">
-                        <img src="breed.png" alt="Breed">
+                        <img src="asset/images/breed.png" alt="Breed">
                         <span>${pet.breed}</span>
                     </p>` : `
                     <p class="flex gap-2">
-                        <img src="breed.png" alt="Breed">
+                        <img src="asset/images/breed.png" alt="Breed">
                         <span>Unknown</span>
                     </p>`}
 
                     ${pet.date_of_birth ? `
                     <p class="flex gap-2">
-                        <img src="calender.png" alt="Birth Date">
+                        <img src="asset/images/calender.png" alt="Birth Date">
                         <span>${pet.date_of_birth}</span>
                     </p>` : `<p class="flex gap-2">
-                        <img src="calender.png" alt="Birth Date">
+                        <img src="asset/images/calender.png" alt="Birth Date">
                         <span>Not Available</span>
                     </p>`}
 
                     <p class="flex gap-2">
-                        <img src="gender.png" alt="Gender">
+                        <img src="asset/images/gender.png" alt="Gender">
                         <span>${pet.gender || 'Unknown'}</span>
                     </p>
 
                     ${pet.price ? `
                     <p class="flex gap-2">
-                        <img src="price.png" alt="Price">
+                        <img src="asset/images/price.png" alt="Price">
                         <span>$ ${pet.price}</span>
                     </p>` : `
                     <p class="flex gap-2">
-                        <img src="price.png" alt="Price">
+                        <img src="asset/images/price.png" alt="Price">
                         <span>$ Negosiateable</span>
                     </p>`}
 
@@ -121,45 +121,45 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="grid md:grid-cols-2 gap-2 ">
                     ${pet.breed ? `
                     <p class="flex gap-2">
-                        <img src="breed.png" alt="Breed">
+                        <img src="asset/images/breed.png" alt="Breed">
                         <span>${pet.breed}</span>
                     </p>` : `
                     <p class="flex gap-2">
-                        <img src="breed.png" alt="Breed">
+                        <img src="asset/images/breed.png" alt="Breed">
                         <span>Unknown</span>
                     </p>`}
 
                     ${pet.date_of_birth ? `
                     <p class="flex gap-2">
-                        <img src="calender.png" alt="Birth Date">
+                        <img src="asset/images/calender.png" alt="Birth Date">
                         <span>${pet.date_of_birth}</span>
                     </p>` : `<p class="flex gap-2">
-                        <img src="calender.png" alt="Birth Date">
+                        <img src="asset/images/calender.png" alt="Birth Date">
                         <span>Not Available</span>
                     </p>`}
 
                     <p class="flex gap-2">
-                        <img src="gender.png" alt="Gender">
+                        <img src="asset/images/gender.png" alt="Gender">
                         <span>${pet.gender || 'Unknown'}</span>
                     </p>
 
                     ${pet.price ? `
                     <p class="flex gap-2">
-                        <img src="price.png" alt="Price">
+                        <img src="asset/images/price.png" alt="Price">
                         <span>$ ${pet.price}</span>
                     </p>` : `
                     <p class="flex gap-2">
-                        <img src="price.png" alt="Price">
+                        <img src="asset/images/price.png" alt="Price">
                         <span>$ Negosiateable</span>
                     </p>`}
 
                      ${pet.vaccinated_status ? `
                     <p class="flex gap-2">
-                        <img src="gender.png" alt="Breed">
+                        <img src="asset/images/gender.png" alt="Breed">
                         <span>${pet.vaccinated_status}</span>
                     </p>` : `
                     <p class="flex gap-2">
-                        <img src="breed.png" alt="Breed">
+                        <img src="asset/images/breed.png" alt="Breed">
                         <span>Unknown</span>
                     </p>`}
                     </div>
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <span>${pet.pet_details}</span>
                     </p>` : `
                     <p class="flex gap-2">
-                        <img src="breed.png" alt="Breed">
+                        <img src="asset/images/breed.png" alt="Breed">
                         <span>Unknown</span>
                     </p>`}
           </div>
